@@ -1,6 +1,5 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css"; // Ensure Leaflet CSS is imported
 
 import marker from "../../Assets/icons/Location.svg";
 import { Icon } from "leaflet";
