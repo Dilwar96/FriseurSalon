@@ -9,7 +9,7 @@ const MapSalon = () => {
       center={position}
       zoom={13}
       scrollWheelZoom={false}
-      className="w-full h-full" // Ensure the map container fills the available space
+      className="w-full h-[400px] md:h-full" // Ensure the map container fills the available space
     >
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
