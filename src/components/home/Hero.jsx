@@ -1,5 +1,5 @@
 import hero1 from "../../assets/salon1.jpg";
-import hero2 from "../../assets/salon1.jpg";
+import hero2 from "../../assets/salon2.jpg";
 import { Link } from "react-router-dom";
 
 const carouselImages = [hero1, hero2];
