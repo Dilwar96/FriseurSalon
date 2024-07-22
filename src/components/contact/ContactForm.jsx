@@ -22,7 +22,7 @@ const ContactForm = () => {
     e.preventDefault();
     emailjs
       .sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, {
-        publicKey: process.env.PUBLIC_KEY_ID,
+        publicKey: "GoRHBfVrDLpcaLfPJ",
       })
       .then(
         () => {
