@@ -2,8 +2,10 @@ import { useState, useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
+import { useNavigate } from "react-router-dom";
 
 const ContactForm = () => {
+  const navigate = useNavigate();
   const form = useRef();
   const [formData, setFormData] = useState({
     name: "",
@@ -19,8 +21,8 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     emailjs
-      .sendForm("service_tp7oeuo", "template_lwawozv", form.current, {
-        publicKey: "GoRHBfVrDLpcaLfPJ",
+      .sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, {
+        publicKey: process.env.PUBLIC_KEY_ID,
       })
       .then(
         () => {
@@ -50,6 +52,7 @@ const ContactForm = () => {
           );
         }
       );
+    navigate("/"); // Redirect to the homepage after successful sending
   };
 
   return (
