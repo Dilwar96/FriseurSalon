@@ -21,7 +21,7 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     emailjs
-      .sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, form.current, {
+      .sendForm("service_tp7oeuo", "template_lwawozv", form.current, {
         publicKey: "GoRHBfVrDLpcaLfPJ",
       })
       .then(
