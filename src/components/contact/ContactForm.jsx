@@ -50,9 +50,10 @@ const ContactForm = () => {
               progress: undefined,
             }
           );
+          console.log(error);
         }
       );
-    navigate("/"); // Redirect to the homepage after successful sending
+    //    navigate("/"); // Redirect to the homepage after successful sending
   };
 
   return (
