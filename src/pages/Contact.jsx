@@ -1,7 +1,7 @@
 import ContactForm from "../components/contact/ContactForm";
 import MapSalon from "../components/contact/MapSalon";
 
-const KontaktPage = () => {
+const Contact = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="container mx-auto px-4 py-12">
@@ -21,4 +21,4 @@ const KontaktPage = () => {
   );
 };
 
-export default KontaktPage;
+export default Contact;
