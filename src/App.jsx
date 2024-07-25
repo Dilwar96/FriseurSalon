@@ -1,7 +1,6 @@
-import { Start, Services, Error } from "./pages";
+import { Start, Services, Error, Contact } from "./pages";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import HomeLayout from "./pages/HomeLayout";
-import Contact from "./pages/Contact";
 
 const router = createBrowserRouter([
   {
