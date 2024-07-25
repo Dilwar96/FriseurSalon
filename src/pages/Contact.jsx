@@ -12,9 +12,9 @@ const Contact = () => {
           <div className="h-full bg-white p-6 rounded-lg shadow-lg">
             <MapSalon />
           </div>
-          {/*           <div className="bg-white p-6 rounded-lg shadow-lg ">
+          <div className="bg-white p-6 rounded-lg shadow-lg ">
             <ContactForm />
-          </div>*/}
+          </div>
         </div>
       </div>
     </div>
