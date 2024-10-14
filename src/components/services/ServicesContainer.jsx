@@ -1,5 +1,5 @@
 import ServicesCard from "./ServicesCard";
-import { services } from "./Leistungen";
+import { services } from "./services";
 
 const ServicesContainer = () => {
   return (

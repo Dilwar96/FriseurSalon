@@ -2,10 +2,8 @@ import { useState, useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
-import { useNavigate } from "react-router-dom";
 
 const ContactForm = () => {
-  const navigate = useNavigate();
   const form = useRef();
   const [formData, setFormData] = useState({
     name: "",
@@ -22,7 +20,7 @@ const ContactForm = () => {
     e.preventDefault();
     emailjs
       .sendForm("service_tp7oeuo", "template_lwawozv", form.current, {
-        publicKey: "GoRHBfVrDLpcaLfPJ",
+        publicKey: "77DV3odqGeVZxJ5-g",
       })
       .then(
         () => {
@@ -53,11 +51,10 @@ const ContactForm = () => {
           console.log(error);
         }
       );
-    //    navigate("/"); // Redirect to the homepage after successful sending
   };
 
   return (
-    <div className="max-w-lg mx-auto p-8 bg-white rounded-md shadow-md">
+    <div className="max-w-lg mx-auto p-8 ">
       <form ref={form} onSubmit={handleSubmit}>
         <div className="mb-6">
           <label
